@@ -1,0 +1,15 @@
+<main>
+  <h1>Shop</h1>
+  <div class="product-grid">
+    {{#each products}}
+      <article class="product-card">
+        <img src="{{image}}" alt="{{alt}}" width="300">
+        <h2>{{name}}</h2>
+        <p class="category">Category: {{category}}</p>
+        <p class="price">Price: {{euro price}}</p>
+        <button type="button" data-add-to-cart="{{id}}">Add to cart</button>
+        <p data-cart-message aria-live="polite"></p>
+      </article>
+    {{/each}}
+  </div>
+</main>
